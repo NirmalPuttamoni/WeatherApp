@@ -25,7 +25,7 @@ inputRef.addEventListener("keypress", event => {
 
 // 2. Make an API call to server to get weather details
 function fetchData(location){
-    fetch(`http://api.weatherapi.com/v1/current.json?key=31014a17aebc42de9e561910233012&q=${location}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=31014a17aebc42de9e561910233012&q=${location}&aqi=no`)
         .then( res => res.json())
         .then(data => updateData(data))
         .catch( err => {console.log(err)})
