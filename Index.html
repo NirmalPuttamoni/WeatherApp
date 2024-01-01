@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h3 class="temperature">Temperature in C</h3>
+        <h1 class="location">City</h1>
+        <img src="sun.png" alt="icon" class="icon">
+        <p class="time">Time and Date</p>
+        <p class="text">Text</p>
+        <div class="header-last-container">
+            <div class="humidity">
+                <i class="fa-duotone fa-droplet-percent"></i>
+                <div>
+                    <p class="humidity-val">50%</p>  
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind-speed">
+                <i class="fa-duotone fa-wind"></i>
+                <div>
+                    <p class="wind-speed-val">20 kmph</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer"> 
+        <input type="text" placeholder="Enter Location Name">
+        <button><i class="fa-duotone fa-magnifying-glass"></i></button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
