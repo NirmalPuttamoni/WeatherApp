@@ -51,11 +51,11 @@ function updateData(obj){
     backgroundRef.classList.add('rotate');
 
     if(isDay===1){
-        backgroundRef.style.backgroundImage='url("day.jpg")';
+        backgroundRef.style.backgroundImage='url("assets/day.jpg")';
         // backgroundRef.classList.add('up');
     }
     else{
-        backgroundRef.style.backgroundImage='url("night.jpg")';
+        backgroundRef.style.backgroundImage='url("assets/night.jpg")';
         // backgroundRef.classList.add('down');
     }
     
