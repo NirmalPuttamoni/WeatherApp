@@ -12,35 +12,43 @@
 </head>
 
 <body>
+    <!-- <img src="" class="background"> -->
+    <div class="background"></div>
 
-    <div class="header">
-        <h3 class="temperature">Temperature in C</h3>
-        <h1 class="location">City</h1>
-        <img src="sun.png" alt="icon" class="icon">
-        <p class="time">Time and Date</p>
-        <p class="text">Text</p>
-        <div class="header-last-container">
-            <div class="humidity">
-                <i class="fa-duotone fa-droplet-percent"></i>
-                <div>
-                    <p class="humidity-val">50%</p>  
-                    <p>Humidity</p>
-                </div>
-            </div>
-            <div class="wind-speed">
-                <i class="fa-duotone fa-wind"></i>
-                <div>
-                    <p class="wind-speed-val">20 kmph</p>
-                    <p>Wind Speed</p>
+    <div class="container">
+        <div class="section1">
+            <div class="header">
+                <h3 class="temperature">Temperature in C</h3>
+                <h1 class="location">City</h1>
+                <img src="sun.png" alt="icon" class="icon">
+                <p class="time">Time and Date</p>
+                <p class="text">Text</p>
+                <div class="header-last-container">
+                    <div class="humidity">
+                        <i class="fa-duotone fa-droplet-percent"></i>
+                        <div>
+                            <p class="humidity-val">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind-speed">
+                        <i class="fa-duotone fa-wind"></i>
+                        <div>
+                            <p class="wind-speed-val">20 kmph</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="section2">
+            <footer class="footer">
+                <input type="text" placeholder="Enter Location Name">
+                <button><i class="fa-duotone fa-magnifying-glass"></i></button>
+            </footer>
+        </div>
     </div>
 
-    <footer class="footer"> 
-        <input type="text" placeholder="Enter Location Name">
-        <button><i class="fa-duotone fa-magnifying-glass"></i></button>
-    </footer>
     <script src="script.js" type="text/javascript"></script>
 </body>
 

@@ -7,6 +7,8 @@ const buttonRef = document.querySelector('.footer button');
 const inputRef = document.querySelector('.footer input');
 const windspdRef = document.querySelector('.wind-speed-val');
 const humidityRef = document.querySelector('.humidity-val');
+const bodydRef = document.querySelector('.body');
+const backgroundRef = document.querySelector('.background');
 
 // 1. On click, get location name
 buttonRef.addEventListener('click', (event) => {
@@ -14,6 +16,9 @@ buttonRef.addEventListener('click', (event) => {
     const city = inputRef.value;
     console.log(city);
     fetchData(city);
+    backgroundRef.classList.remove('rotate');
+    // backgroundRef.classList.remove('down');
+    // backgroundRef.classList.remove('up');
 } );
 
 inputRef.addEventListener("keypress", event => {
@@ -41,6 +46,17 @@ function updateData(obj){
     textRef.innerText = obj.current.condition.text;
     windspdRef.innerText= obj.current.wind_kph+" kmph";
     humidityRef.innerText=obj.current.humidity+"%";
-    // humidityRef.innerHTML= `
-    // <span>kmph</span>`
+    const isDay = obj.current.is_day;
+        
+    backgroundRef.classList.add('rotate');
+
+    if(isDay===1){
+        backgroundRef.style.backgroundImage='url("day.jpg")';
+        // backgroundRef.classList.add('up');
+    }
+    else{
+        backgroundRef.style.backgroundImage='url("night.jpg")';
+        // backgroundRef.classList.add('down');
+    }
+    
 }
