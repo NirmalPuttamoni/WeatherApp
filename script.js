@@ -10,6 +10,9 @@ const humidityRef = document.querySelector('.humidity-val');
 const bodydRef = document.querySelector('.body');
 const backgroundRef = document.querySelector('.background');
 
+// by default focus on search bar
+inputRef.focus();
+
 // 1. On click, get location name
 buttonRef.addEventListener('click', (event) => {
     event.preventDefault();
